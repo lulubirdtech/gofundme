@@ -24,7 +24,7 @@ export default function GoWithFundLanding() {
               <Link href="#" className="text-gray-700 hover:text-blue-600 font-medium">
                 Home
               </Link>
-              <Link href="#" className="text-gray-700 hover:text-blue-600 font-medium">
+              <Link href="/about" className="text-gray-700 hover:text-blue-600 font-medium">
                 About Us
               </Link>
               <Link href="#" className="text-gray-700 hover:text-blue-600 font-medium">
@@ -342,7 +342,7 @@ export default function GoWithFundLanding() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <div className="space-y-2">
-                <Link href="#" className="block text-gray-300 hover:text-white transition-colors">
+                <Link href="/about" className="block text-gray-300 hover:text-white transition-colors">
                   About Us
                 </Link>
                 <Link href="#" className="block text-gray-300 hover:text-white transition-colors">
