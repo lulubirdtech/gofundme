@@ -24,7 +24,7 @@ export default function GoWithFundLanding() {
               <Link href="#" className="text-gray-700 hover:text-blue-600 font-medium">
                 Home
               </Link>
-              <Link href="#" className="text-gray-700 hover:text-blue-600 font-medium">
+              <Link href="/about" className="text-gray-700 hover:text-blue-600 font-medium">
                 About Us
               </Link>
               <Link href="#" className="text-gray-700 hover:text-blue-600 font-medium">
@@ -43,7 +43,6 @@ export default function GoWithFundLanding() {
 
             {/* CTA Button */}
             <div className="flex items-center space-x-4">
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6">Donate</Button>
               <Button variant="ghost" size="icon" className="md:hidden">
                 <Menu className="h-6 w-6" />
               </Button>
@@ -305,9 +304,6 @@ export default function GoWithFundLanding() {
             Join thousands of supporters who are creating positive change around the world.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8">
-              Donate Now
-            </Button>
             <Button
               size="lg"
               variant="outline"
@@ -346,7 +342,7 @@ export default function GoWithFundLanding() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <div className="space-y-2">
-                <Link href="#" className="block text-gray-300 hover:text-white transition-colors">
+                <Link href="/about" className="block text-gray-300 hover:text-white transition-colors">
                   About Us
                 </Link>
                 <Link href="#" className="block text-gray-300 hover:text-white transition-colors">
