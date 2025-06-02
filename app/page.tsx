@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { Badge } from "@/components/ui/badge"
-import { Heart, Globe, Search, Upload, Github, Twitter, Linkedin, Facebook, Menu } from "lucide-react"
+import { Heart, Globe, Search, Upload, Github, Twitter, Linkedin, Facebook, Menu, Sun, Moon } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
