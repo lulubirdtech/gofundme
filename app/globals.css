@@ -23,11 +23,24 @@ body {
   .dark .glass {
     background: rgba(2, 13, 25, 0.1);
   }
+  .glow {
+    box-shadow: 0 0 15px rgba(14, 45, 47, 0.3);
+  }
+  .glow-text {
+    text-shadow: 0 0 10px rgba(14, 45, 47, 0.3);
+  }
+  .glass {
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .dark .glass {
+    background: rgba(2, 13, 25, 0.1);
+  }
 }
 
 @layer base {
   :root {
-    --background: 180 37% 97%;
+    --background: 186 37% 97%;
     --foreground: 186 37% 12%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
