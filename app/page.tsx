@@ -10,28 +10,36 @@ export default function GoWithFundLanding() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+      <nav className="sticky top-0 z-50 glass glow">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex items-center">
-              <Heart className="h-8 w-8 text-blue-600 mr-2" />
-              <span className="text-xl font-bold text-gray-900">GoWithFund.org</span>
+              <Heart className="h-8 w-8 text-[#0e2d2f] glow-text mr-2" />
+              <span className="text-xl font-bold text-[#0e2d2f] glow-text">GoWithFund.org</span>
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-8 relative">
               <Link href="#" className="text-gray-700 hover:text-blue-600 font-medium">
                 Home
               </Link>
               <Link href="/about" className="text-gray-700 hover:text-blue-600 font-medium">
                 About Us
               </Link>
-              <Link href="#" className="text-gray-700 hover:text-blue-600 font-medium">
+              <Link 
+                href="#" 
+                className="relative group text-[#0e2d2f] hover:text-[#020D19] transition-colors duration-300 font-medium"
+              >
                 Browse Projects
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#0e2d2f] group-hover:w-full transition-all duration-300"></span>
               </Link>
-              <Link href="#" className="text-gray-700 hover:text-blue-600 font-medium">
+              <Link 
+                href="#" 
+                className="relative group text-[#0e2d2f] hover:text-[#020D19] transition-colors duration-300 font-medium"
+              >
                 For Nonprofits
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#0e2d2f] group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link href="#" className="text-gray-700 hover:text-blue-600 font-medium">
                 Contribute (Developers)
@@ -43,6 +51,15 @@ export default function GoWithFundLanding() {
 
             {/* CTA Button */}
             <div className="flex items-center space-x-4">
+              <Button 
+                variant="outline" 
+                size="icon" 
+                className="rounded-full w-10 h-10 border-[#0e2d2f] text-[#0e2d2f] hover:bg-[#0e2d2f] hover:text-white transition-all duration-300"
+              >
+                <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                <span className="sr-only">Toggle theme</span>
+              </Button>
               <Button variant="ghost" size="icon" className="md:hidden">
                 <Menu className="h-6 w-6" />
               </Button>
@@ -52,26 +69,29 @@ export default function GoWithFundLanding() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-teal-50 py-20 lg:py-32">
+      <section className="relative bg-gradient-to-br from-[#0e2d2f]/10 via-white to-[#020D19]/10 py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold text-[#0e2d2f] leading-tight glow-text">
                 Empowering Change:
-                <span className="text-blue-600"> Connecting Resources</span> to Global Needs
+                <span className="text-[#020D19]"> Connecting Resources</span> to Global Needs
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl text-[#0e2d2f]/80 leading-relaxed">
                 GoWithFund.org offers a platform for nonprofits and underserved communities to fund vital projects in
                 education, healthcare, and social development worldwide.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3">
+                <Button 
+                  size="lg" 
+                  className="bg-[#0e2d2f] hover:bg-[#020D19] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 glow hover:glow"
+                >
                   Browse Projects
                 </Button>
-                <Button
+                <Button 
                   size="lg"
                   variant="outline"
-                  className="border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-3"
+                  className="border-[#0e2d2f] text-[#0e2d2f] hover:bg-[#0e2d2f] hover:text-white font-semibold px-8 py-3 rounded-full transition-all duration-300"
                 >
                   Submit a Project
                 </Button>
@@ -83,7 +103,7 @@ export default function GoWithFundLanding() {
                 alt="Diverse hands working together for global impact"
                 width={600}
                 height={500}
-                className="rounded-2xl shadow-2xl"
+                className="rounded-3xl shadow-2xl glow"
               />
             </div>
           </div>
