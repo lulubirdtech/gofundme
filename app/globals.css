@@ -11,30 +11,24 @@ body {
     text-wrap: balance;
   }
   .glow {
-    box-shadow: 0 0 15px rgba(14, 45, 47, 0.3);
+    box-shadow: 0 0 25px rgba(14, 45, 47, 0.2);
+    transition: box-shadow 0.3s ease;
   }
   .glow-text {
-    text-shadow: 0 0 10px rgba(14, 45, 47, 0.3);
+    text-shadow: 0 0 15px rgba(14, 45, 47, 0.25);
   }
   .glass {
-    backdrop-filter: blur(8px);
-    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
   .dark .glass {
-    background: rgba(2, 13, 25, 0.1);
+    background: rgba(2, 13, 25, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
-  .glow {
-    box-shadow: 0 0 15px rgba(14, 45, 47, 0.3);
-  }
-  .glow-text {
-    text-shadow: 0 0 10px rgba(14, 45, 47, 0.3);
-  }
-  .glass {
-    backdrop-filter: blur(8px);
-    background: rgba(255, 255, 255, 0.1);
-  }
-  .dark .glass {
-    background: rgba(2, 13, 25, 0.1);
+  
+  .hover\:glow:hover {
+    box-shadow: 0 0 35px rgba(14, 45, 47, 0.3);
   }
 }
 
